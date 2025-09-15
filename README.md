@@ -1,2 +1,40 @@
-The Student Commute Optimizer is a carpooling and route-sharing platform designed for students.  
-It helps match students traveling along similar routes so they can share rides efficiently, save costs, and reduce traffic.
+# Student Commute Optimizer
+
+This project is a carpool and route-sharing app for students.  
+It helps students who go in the same direction to travel together instead of going alone.  
+
+#Project Overview
+- Students enter home and destination on a map.  
+- The system checks for other students going on the same or nearby route.  
+- If a match is found, it shows their profile with a unique username (not real name).  
+- Students can click on an icon and chat directly with each other.  
+- Identity is hidden to keep things safe and private.  
+
+
+# Architecture (Simple View)
+
+flowchart TD
+    A[Student App (Frontend - React, Map)] --> B[Backend Server (Node.js/Express)]
+    B --> C[(Database - Routes & Users)]
+    B --> D[Route Matching Logic]
+    A --> E[Chat (Socket.IO)]
+    E --> B
+
+
+# Tech Used
+
+* Frontend: HTML, CSS, JavaScript, React
+* Backend: Node.js, Express.js
+* Database: MongoDB / PostgreSQL
+* Maps: Mapbox / Leaflet
+* Chat: Socket.IO
+
+---
+
+# Future Scope
+
+* Add group rides with more than 2 students.
+* Add ride scheduling for daily use.
+* Add ratings and reviews for trust and safety.
+
+
