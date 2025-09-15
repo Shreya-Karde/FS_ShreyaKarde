@@ -31,6 +31,7 @@ flowchart TD
 
 # Flowchart
 
+
           ┌────────────────────┐
           │ Student Registers  │
           │ (Unique Username)  │
