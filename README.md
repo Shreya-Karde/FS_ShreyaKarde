@@ -29,61 +29,6 @@ flowchart TD
 * Maps: Mapbox / Leaflet
 * Chat: Socket.IO
 
-# Flowchart
-
-
-          ┌────────────────────┐
-          │ Student Registers  │
-          │ (Unique Username)  │
-          └─────────┬──────────┘
-                    │
-                    ▼
-          ┌────────────────────┐
-          │ Enter Home &       │
-          │ Destination        │
-          └─────────┬──────────┘
-                    │
-                    ▼
-          ┌────────────────────┐
-          │ Route Generated    │
-          │ (via Map API)      │
-          └─────────┬──────────┘
-                    │
-                    ▼
-          ┌────────────────────┐
-          │ Store Route in DB  │
-          │ (Users + Routes)   │
-          └─────────┬──────────┘
-                    │
-                    ▼
-          ┌────────────────────┐
-          │ Compare Routes      │
-          │ (Matching Engine)   │
-          └─────────┬──────────┘
-                    │
-          ┌─────────▼──────────┐
-          │ Matches Found?      │
-          └─────────┬──────────┘
-         Yes        │        No
-          ▼         │         ▼
-┌─────────────────┐ │  ┌───────────────────┐
-│ Show Nearby      │ │  │ No Match Found   │
-│ Students on Map  │ │  │ (Wait for others)│
-└─────────┬────────┘ │  └──────────────────┘
-          │          │
-          ▼          │
- ┌────────────────────┐
- │ Chat Anonymously   │
- │ (Socket.IO)        │
- └─────────┬──────────┘
-           │
-           ▼
- ┌────────────────────┐
- │ Share Ride & Travel│
- └────────────────────┘
-
- 
-
 
 
 # Future Scope
