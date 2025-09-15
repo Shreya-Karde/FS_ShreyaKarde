@@ -83,29 +83,7 @@ flowchart TD
 
  
 
-# Block Diagram (System Components)
- ┌─────────────────────┐       ┌───────────────────────┐
- │ Student Frontend    │       │ Chat Service (Socket) │
- │ React + Map UI      │◄─────►│ Real-time Messaging   │
- └─────────┬───────────┘       └─────────┬─────────────┘
-           │                               │
-           ▼                               │
- ┌─────────────────────┐                   │
- │ Backend API         │                   │
- │ Node.js + Express   │                   │
- └─────────┬───────────┘                   │
-           │                               │
-           ▼                               │
- ┌─────────────────────┐                   │
- │ Route Matching      │                   │
- │ Engine (Logic)      │                   │
- └─────────┬───────────┘                   │
-           │                               │
-           ▼                               ▼
- ┌──────────────────────────────────────────────┐
- │ Database                                     │
- │ Users + Routes (PostgreSQL / MongoDB)        │
- └──────────────────────────────────────────────┘
+
 
 # Future Scope
 
